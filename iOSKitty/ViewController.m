@@ -10,7 +10,8 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *testLabel;
-
+@property (weak, nonatomic) IBOutlet UIButton *testButton;
+@property (nonatomic, assign) NSInteger count;
 @end
 
 @implementation ViewController
@@ -24,9 +25,16 @@
     //New Way-- Use this way!
     self.testLabel.text = @"hello cat";
     self.testLabel.textAlignment = NSTextAlignmentCenter;
-    
+    //Button
+    [self.testButton setTitle:@"Add more kitties" forState:UIControlStateNormal];
+    //Initalize
+    self.count = 0;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)didTapButton:(id)sender {
+    self.count += 1;
+    self.testLabel.text = [NSString stringWithFormat:@"%ld", self.count];
+}
 
 @end
