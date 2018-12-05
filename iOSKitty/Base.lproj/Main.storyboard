@@ -24,8 +24,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-Nt-tdh">
-                                <rect key="frame" x="164" y="404" width="46" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-Nt-tdh">
+                                <rect key="frame" x="164.5" y="404" width="46" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="CMN-FS-ark"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pd2-cP-gSV"/>
@@ -34,12 +37,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gdW-Nt-tdh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9O2-fa-GUu"/>
+                            <constraint firstItem="gdW-Nt-tdh" firstAttribute="top" secondItem="Q4b-of-OUb" secondAttribute="bottom" constant="50" id="1jD-D7-5DA"/>
                             <constraint firstItem="Q4b-of-OUb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="DY7-nc-Dnc"/>
-                            <constraint firstItem="gdW-Nt-tdh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="384" id="L2Z-Dp-4Jh"/>
                             <constraint firstItem="Q4b-of-OUb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LIe-8E-el6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gdW-Nt-tdh" secondAttribute="bottom" constant="233" id="hMX-iv-Iht"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q4b-of-OUb" secondAttribute="trailing" constant="16" id="sBc-oR-Nmq"/>
+                            <constraint firstItem="gdW-Nt-tdh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tF9-rZ-tXC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

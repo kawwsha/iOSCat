@@ -29,12 +29,15 @@
     [self.testButton setTitle:@"Add more kitties" forState:UIControlStateNormal];
     //Initalize
     self.count = 0;
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (IBAction)didTapButton:(id)sender {
     self.count += 1;
-    self.testLabel.text = [NSString stringWithFormat:@"%ld", self.count];
+}
+
+- (void)setCount:(NSInteger)count {
+    _count = count;
+    self.testLabel.text = [NSString stringWithFormat:@"%ld", _count];
 }
 
 @end
