@@ -31,7 +31,7 @@
     self.count = 0;
 }
 
-- (IBAction)didTapButton:(id)sender {
+- (IBAction)didTapButton:(UIButton*)sender {
     self.count += 1;
 }
 
